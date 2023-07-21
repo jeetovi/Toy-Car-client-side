@@ -1,8 +1,12 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../Provider/AuthProvider";
 
  
 
 const Regester = () => {
+    const {user} = useContext(AuthContext)
+    console.log(user)
     const handelerRegastation = event =>{
         event.preventDefault();
         const form = event.target;
