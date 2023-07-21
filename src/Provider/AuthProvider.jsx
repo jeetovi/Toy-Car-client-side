@@ -13,10 +13,13 @@ const AuthProvider = ({children}) => {
     const [lodding, setLodding] = useState(true)
     // Regestation
  const createUser = (email, password) =>{
+    setLodding(true)
     return createUserWithEmailAndPassword( auth, email, password)
+    
  }
 // Login system
 const signIn = (email, password) =>{
+    setLodding(true)
     return signInWithEmailAndPassword(auth, email, password)
 }
 // google signin

@@ -1,11 +1,18 @@
-import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Link, useLocation,useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
+import { space } from "postcss/lib/list";
 
  
 
 const Login = () => {
+  const [show, setShow] = useState(false)
     const {signIn,signInWithGoogle} = useContext(AuthContext)
+    const navigate = useNavigate()
+    const location = useLocation()
+const from = location.state?.from.pathname || '/'
+
+    console.log(location)
     const handleLogin = event =>{
         event.preventDefault();
         const form = event.target;
@@ -18,6 +25,7 @@ const Login = () => {
             const loguser = result.user;
             console.log(loguser)
             form.reset();
+            navigate(from , {replace: true})
             // ...
           })
           .catch((error) => {
@@ -56,7 +64,15 @@ const Login = () => {
                 <label className="label">
                   <span className="label-text">Password</span>
                 </label>
-                <input type="password" name="password" placeholder="password" className="input input-bordered" required />
+                <input type={show ? "text" : "password"} name="password" placeholder="password" className="input input-bordered" required />
+                <p onClick={() => setShow(!show)}>
+                  <small>
+                    {
+                      show ? <span>Hide password</span>: <span>Show password</span>
+                    }
+                  </small>
+
+                </p>
                 <label className="label">
                   <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                 </label>

@@ -39,16 +39,7 @@ const Header = () => {
                 Home
               </Link>
 
-              <Link className="btn btn-ghost normal-case text-x2" to="/login">
-                Login
-              </Link>
-
-              <Link
-                className="btn btn-ghost normal-case text-x2"
-                to="/regestation"
-              >
-                Regester
-              </Link>
+             
           <Link className="btn btn-ghost normal-case text-x2" to="/alltoy">
              AllToys
            </Link>
@@ -58,6 +49,16 @@ const Header = () => {
            { user && <Link className="btn btn-ghost normal-case text-x2" to="/mytoy">
              My Toy
            </Link>}
+           <Link className="btn btn-ghost normal-case text-x2" to="/login">
+                Login
+              </Link>
+
+              <Link
+                className="btn btn-ghost normal-case text-x2"
+                to="/regestation"
+              >
+                Regester
+              </Link>
             
             </ul>
           </div>
@@ -67,14 +68,7 @@ const Header = () => {
           <Link className="btn btn-ghost normal-case text-x2" to="/">
             Home
           </Link>
-
-          <Link className="btn btn-ghost normal-case text-x2" to="/login">
-            Login
-          </Link>
-
-          <Link className="btn btn-ghost normal-case text-x2" to="/regestation">
-            Regester
-          </Link>
+ 
           <Link className="btn btn-ghost normal-case text-x2" to="/alltoy">
              AllToys
            </Link>
@@ -84,6 +78,16 @@ const Header = () => {
            { user && <Link className="btn btn-ghost normal-case text-x2" to="/mytoy">
              My Toy
            </Link>}
+           <Link className="btn btn-ghost normal-case text-x2" to="/login">
+                Login
+              </Link>
+
+              <Link
+                className="btn btn-ghost normal-case text-x2"
+                to="/regestation"
+              >
+                Regester
+              </Link>
 
           
           

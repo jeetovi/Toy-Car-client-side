@@ -1,12 +1,14 @@
 import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
-import { Navigate } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 import AllToy from "../components/AllToy";
 
  
 
 const PrivetRoute = ({children}) => {
     const {user,lodding} = useContext(AuthContext)
+    const location = useLocation()
+    console.log(location)
 
     // lodding
     if (lodding){
@@ -16,7 +18,7 @@ const PrivetRoute = ({children}) => {
        
         return children
     }
-         return <Navigate to='/login' replace={true}></Navigate>
+         return <Navigate to='/login' state={{from:location}} replace={true}></Navigate>
      
 };
 
