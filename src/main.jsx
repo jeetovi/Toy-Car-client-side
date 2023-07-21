@@ -50,13 +50,16 @@ const router = createBrowserRouter([
 {
   path:'mytoy',
   element:<PrivetRoute> <MyToy></MyToy> </PrivetRoute>
-}
+},
+
     ]
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+ 
+ <div className="max-w-6xl mx-auto">
+ <React.StrictMode>
   <AuthProvider>
   <RouterProvider router={router} />
 
@@ -65,4 +68,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   
    
   </React.StrictMode>
+ </div>
+
 );

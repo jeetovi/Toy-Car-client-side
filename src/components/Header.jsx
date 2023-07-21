@@ -12,7 +12,7 @@ const Header = () => {
   };
   return (
     <div>
-      <div className="navbar bg-slate-400">
+      <div className="navbar  bg-slate-400">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -62,7 +62,7 @@ const Header = () => {
             
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+           <Link className="btn btn-ghost normal-case text-xl" to='/'> TOY-CAR </Link>  
         </div>
         <div className="navbar-center hidden lg:flex">
           <Link className="btn btn-ghost normal-case text-x2" to="/">

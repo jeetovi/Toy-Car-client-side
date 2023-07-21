@@ -1,14 +1,21 @@
-import { useContext } from "react";
-import { AuthContext } from "../Provider/AuthProvider";
+ 
+import About from "./Home/About";
+import Banner from "./Home/Banner";
+import Services from "./Home/Services";
+
+ 
 
  
 
 const Home = () => {
-    const user = useContext(AuthContext)
+   
     return (
         <div>
-            <h1>This is a home section
-                 { user && <span>{user.displayName}</span>}</h1>
+             
+               <Banner></Banner>
+               <About></About>
+               <Services></Services>
+               
         </div>
     );
 };
