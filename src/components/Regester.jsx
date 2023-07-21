@@ -5,8 +5,8 @@ import { AuthContext } from "../Provider/AuthProvider";
  
 
 const Regester = () => {
-    const {user} = useContext(AuthContext)
-    console.log(user)
+    const {user,createUser} = useContext(AuthContext)
+    console.log(user,createUser)
     const handelerRegastation = event =>{
         event.preventDefault();
         const form = event.target;
@@ -14,6 +14,20 @@ const Regester = () => {
         const password = form.password.value;
         const name = form.name.value;
         console.log(name, email,password)
+
+        createUser(email, password)
+        .then((result) => {
+            // Signed in 
+            const loguser = result.user;
+            console.log(loguser)
+            form.reset();
+            // ...
+          })
+          .catch((error) => {
+           
+           console.log(error)
+            // ..
+          });
 
     }
     
@@ -48,7 +62,7 @@ const Regester = () => {
                 </label>
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Login</button>
+                <button className="btn btn-primary">Regester</button>
               </div>
             </form>
           </div>
