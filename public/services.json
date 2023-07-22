@@ -1,43 +1,33 @@
   [
-  {
-    "_id":1,
-    "price":"200 $",
+  {    "price":"200 $",
     "img":"https://images.pexels.com/photos/248704/pexels-photo-248704.jpeg",
     "title": "City Transfer",
    "icon": "ri-map-pin-2-line",
    "desc": "Tempor tempor sadipscing vero lorem sea, invidunt sed et eos ipsum et erat. Dolor ut duo sadipscing lorem. Gubergren gub"
   },
 
-  {
-    "_id":1,
-    "price":"200 $",
+  {    "price":"200 $",
     "img":"https://images.pexels.com/photos/760979/pexels-photo-760979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "title": "Whole  City Tour",
    "icon": "ri-community-line",
    "desc": "Tempor tempor sadipscing vero lorem sea, invidunt sed et eos ipsum et erat. Dolor ut duo sadipscing lorem. Gubergren gub"
   },
 
-  {
-    "_id":1,
-    "price":"200$",
+  {    "price":"200$",
     "img":"https://images.pexels.com/photos/35964/ferrari-red-auto-sports-car.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
    "title": "Unlimited Miles Car Rental",
     "icon": "ri-roadster-line",
     "desc": "Tempor tempor sadipscing vero lorem sea, invidunt sed et eos ipsum et erat. Dolor ut duo sadipscing lorem. Gubergren gub"
   },
 
-  {
-    "_id":1,
-    "price":"200 $",
+  {    "price":"200 $",
     "img":"https://images.pexels.com/photos/386009/pexels-photo-386009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
    "title": "Fast & Easy Booking",
     "icon": "ri-timer-flash-line",
     "desc": "Tempor tempor sadipscing vero lorem sea, invidunt sed et eos ipsum et erat. Dolor ut duo sadipscing lorem. Gubergren gub"
   },
 
-  {
-    "_id":3,
-    "price":"200 $",
+  {    "price":"200 $",
     "img":"https://images.pexels.com/photos/760979/pexels-photo-760979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
    "title": "Many Pickup Locations",
    "icon": "ri-map-pin-line",
@@ -45,7 +35,6 @@
   },
 
   {
-    "_id": 6,
     "price":"200 $",
     "img":"https://images.pexels.com/photos/35964/ferrari-red-auto-sports-car.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
    "title": "Airport Transfer",

@@ -6,7 +6,7 @@ import avg2 from '../../../src/assets/all-images/slider-img/slider-2.jpg'
 const Banner = () => {
     return (
         <div>
-            <div className="carousel w-full h-[600px]">
+            <div className="carousel w-full h-[400px]">
   <div id="slide1" className="carousel-item relative w-full">
     <img src={avg1} className="w-full rounded-xl" />
     <div className="absolute flex items-center justify-between   transform -translate-y-1/2 left-0  

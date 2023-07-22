@@ -1,6 +1,7 @@
  
+import { Tabs } from "@mui/material";
 import About from "./Home/About";
-import Banner from "./Home/Banner";
+ 
 import Services from "./Home/Services";
 
  
@@ -12,9 +13,10 @@ const Home = () => {
     return (
         <div>
              
-               <Banner></Banner>
+               
                <About></About>
                <Services></Services>
+               <Tabs></Tabs>
                
         </div>
     );
