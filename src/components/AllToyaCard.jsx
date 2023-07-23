@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
- const AllToyaCard = ({ toy }) => {
+const AllToyaCard = ({ toy }) => {
   const {
     id,
     brand,
@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
     imgUrl,
     love,
     Rimg,
-    eye
+    eye,
   } = toy;
   return (
     <div>
@@ -34,18 +34,18 @@ import { Link } from "react-router-dom";
               <span className=" px-3 py-1 rounded-full text-xs bg-gray-400">
                 <h3>{brand} Brand</h3>
               </span>
-           
+
               <span className=" px-3 py-1 rounded-full text-xs bg-gray-400">
-              <h3>{model}</h3>
-              
+                <h3>{model}</h3>
               </span>
               <span className=" px-3 py-1 rounded-full text-xs bg-gray-400">
-              <h3>Id:{id}</h3>
-              
+                <h3>Id:{id}</h3>
               </span>
-              
             </div>
-            <span > <p className="py-2">Gps:{gps}</p></span>
+            <span>
+              {" "}
+              <p className="py-2">Gps:{gps}</p>
+            </span>
             {/* Product title */}
             <h2 className="font-semibold text-3xl mb-2 overflow-ellipsis overflow-hidden whitespace-nowrap">
               {carName}
@@ -66,21 +66,26 @@ d */}
 
           {/* products ratting  */}
           <span className="flex items-center mt-1">
-  <img className="opacity-50 w-20 ml-5" src={Rimg} alt="" />
-            <span className="text-xs ml-2 to-gray-500">
-              20k reviews
-            </span>
+            <img className="opacity-50 w-20 ml-5" src={Rimg} alt="" />
+            <span className="text-xs ml-2 to-gray-500">20k reviews</span>
           </span>
           {/* product  */}
-          <div className="mt-5 flex py-3  ml-2 pr-2 gap-2"> 
-          <Link to='/chackout'><button className=" hover:bg-red-400/80 px-6 py-2 rounded-md to-white font-medium tracking-wider transition  bg-yellow-500/80">Add to chart</button> </Link>
-          <button className="flex-grow justify-center items-center bg-red-300/60 hover:bg-gray-50 transition rounded-md">
-           <img  className="opacity-50 w-6 ml-4 items-center" src={love} alt="" />
-          </button>
-          <button className="flex-grow justify-center items-center bg-gray-400/60 hover:bg-gray-50 transition rounded-md">
-           <img className="opacity-50 w-6 ml-4" src={eye} alt="" />
-          </button>
-          
+          <div className="mt-5 flex py-3  ml-2 pr-2 gap-2">
+            <Link to="/chackout">
+              <button className=" hover:bg-red-400/80 px-6 py-2 rounded-md to-white font-medium tracking-wider transition  bg-yellow-500/80">
+                Add to chart
+              </button>{" "}
+            </Link>
+            <button className="flex-grow justify-center items-center bg-red-300/60 hover:bg-gray-50 transition rounded-md">
+              <img
+                className="opacity-50 w-6 ml-4 items-center"
+                src={love}
+                alt=""
+              />
+            </button>
+            <button className="flex-grow justify-center items-center bg-gray-400/60 hover:bg-gray-50 transition rounded-md">
+              <img className="opacity-50 w-6 ml-4" src={eye} alt="" />
+            </button>
           </div>
         </div>
       </body>

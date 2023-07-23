@@ -13,9 +13,8 @@ const AllToy = () => {
     <div className="mt-4  mb-4">
       <div className="text-center bg-violet-200 py-1 mb-3">
         <h3 className="text-1xl text-orange-500"> All tou Services</h3>
-        <h2 className="text-3xl text-orange-500">All Toy Section  </h2>
+        <h2 className="text-3xl text-orange-500">All Toy Section </h2>
         <p className="mb-5">
-         
           Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Cum
           reprehenderit cumque maxime itaque dolorum totam {toys.length}{" "}
         </p>
