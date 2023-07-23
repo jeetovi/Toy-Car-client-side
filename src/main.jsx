@@ -15,6 +15,7 @@ import PrivetRoute from "./Routes/PrivetRoute";
 import UserProfile from "./components/UserProfile";
 import AToy from "./components/AToy";
 import MyToy from "./components/MyToy";
+import Blog from "./components/Home/Blog";
 // import ChackOut from "./components/ChackOut";
  
 const router = createBrowserRouter([
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
 {
   path:'/profile',
   element: <PrivetRoute><UserProfile></UserProfile></PrivetRoute>
+},
+{
+path:'/blog',
+element:<Blog></Blog>
 },
 {
   path:'/atoy',

@@ -49,6 +49,12 @@ const Header = () => {
            { user && <Link className="btn btn-ghost normal-case text-x2" to="/mytoy">
              My Toy
            </Link>}
+           <Link
+                className="btn btn-ghost normal-case text-x2"
+                to="/blog"
+              >
+                Blog
+              </Link>
            <Link className="btn btn-ghost normal-case text-x2" to="/login">
                 Login
               </Link>
@@ -78,6 +84,12 @@ const Header = () => {
            { user && <Link className="btn btn-ghost normal-case text-x2" to="/mytoy">
              My Toy
            </Link>}
+           <Link
+                className="btn btn-ghost normal-case text-x2"
+                to="/blog"
+              >
+                Blog
+              </Link>
            <Link className="btn btn-ghost normal-case text-x2" to="/login">
                 Login
               </Link>
@@ -88,6 +100,8 @@ const Header = () => {
               >
                 Regester
               </Link>
+
+            
 
           
           

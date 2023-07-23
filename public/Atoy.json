@@ -3,18 +3,18 @@
         "id":1,
         "Name": "Blue Widget",
        "Price": "$19.99",
-        "Image": "https://media.istockphoto.com/id/1166961071/photo/two-cute-adorable-blond-sibings-children-having-fun-riding-electric-toy-suv-car-in-city-park.jpg?s=1024x1024&w=is&k=20&c=Cx-h5Vy7aeUeVvIZr7HTtXW2nPr-Lu90tV28d74sktc="
+        "Image": "https://images.pexels.com/photos/574519/pexels-photo-574519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "id":1,
         "Name": "Blue Widget",
        "Price": "$19.99",
-        "Image": "https://media.istockphoto.com/id/1166961073/photo/two-cute-adorable-blond-sibings-children-having-fun-riding-electric-toy-suv-car-in-city-park.jpg?s=1024x1024&w=is&k=20&c=3x0L6x6029IejY7ps0GDlxGImYta5rE4y2fiusABPjE="
+        "Image": "https://images.pexels.com/photos/35619/capri-ford-oldtimer-automotive.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {  "id":1,
         "Name": "Blue Widget",
        "Price": "$19.99",
-        "Image": "https://media.istockphoto.com/id/1166961071/photo/two-cute-adorable-blond-sibings-children-having-fun-riding-electric-toy-suv-car-in-city-park.jpg?s=1024x1024&w=is&k=20&c=Cx-h5Vy7aeUeVvIZr7HTtXW2nPr-Lu90tV28d74sktc="
+        "Image": "https://images.pexels.com/photos/50697/messerschmitt-kr200-classic-car-oldtimer-automobile-50697.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {  "id":1,
         "Name": "Blue Widget",
@@ -28,7 +28,7 @@
     {  "id":1,
         "Name": "Blue Widget",
        "Price": "$19.99",
-        "Image": "https://media.istockphoto.com/id/1166961073/photo/two-cute-adorable-blond-sibings-children-having-fun-riding-electric-toy-suv-car-in-city-park.jpg?s=1024x1024&w=is&k=20&c=3x0L6x6029IejY7ps0GDlxGImYta5rE4y2fiusABPjE="
+        "Image": "https://images.pexels.com/photos/35967/mini-cooper-auto-model-vehicle.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1l"
     }
     
 ]

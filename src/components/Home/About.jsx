@@ -3,7 +3,7 @@ import img1 from '../../../src/assets/all-images/ava-1.jpg'
 const About = () => {
     return (
         <div>
-            <h1 className='py-6 text-3xl text-orange-700 font bold items-center text-center'> Abou t Section</h1>
+            <h1 className='py-6 text-3xl text-orange-700 font bold items-center text-center'> About Section</h1>
              
 
             <div className="hero    bg-base-200">
