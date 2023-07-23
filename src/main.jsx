@@ -16,6 +16,7 @@ import UserProfile from "./components/UserProfile";
 import AToy from "./components/AToy";
 import MyToy from "./components/MyToy";
 import Blog from "./components/Home/Blog";
+import ChackOut from "./components/ChackOut";
 // import ChackOut from "./components/ChackOut";
  
 const router = createBrowserRouter([
@@ -58,8 +59,8 @@ element:<Blog></Blog>
   element:<PrivetRoute> <MyToy></MyToy> </PrivetRoute>
 },
 {
-  // path:'chackout/:id',
-  // element: <ChackOut></ChackOut>,
+  path:'chackout',
+  element: <ChackOut></ChackOut>,
  
 }
 

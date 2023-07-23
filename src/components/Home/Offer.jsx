@@ -2,8 +2,8 @@
 
 const Offer = () => {
     return (
-        <div>   <h1 className='py-6 text-3xl text-gray-700 font bold items-center text-center'>Offer Close</h1>
-             <div className="grid place-content-center grid-flow-col gap-5 text-center auto-cols-max">
+        <div className="bg-yellow-200 mt-4">   <h1 className='py-6 text-3xl text-gray-700 font bold items-center text-center'>Offer  Close Date</h1>
+             <div className="grid py-3 place-content-center grid-flow-col gap-5 text-center auto-cols-max">
   <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
     <span className="countdown font-mono text-5xl">
       <span style={{"--value":15}}></span>

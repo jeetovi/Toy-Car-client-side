@@ -15,7 +15,7 @@ const ServicesCard = ({service}) => {
     <h2>Price : {price}</h2>
     <p>{desc}</p>
     <div className="card-actions">
-      <Link to='/alltoy'>
+      <Link to='/chackout'>
       <button className="btn h-1 btn-outline bg-orange-100">Buy Now</button>
 
       </Link>

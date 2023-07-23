@@ -13,8 +13,8 @@ const AToy = () => {
     },[])
     return (
         <div className="mt-4 mb-4">
-        <div className="text-center">
-            <h3 className="text-1xl text-orange-500">  car Services</h3>
+        <div className="text-center bg-blue-200 py-1 mb-3">
+            <h3 className="text-1xl text-orange-500">All car Services</h3>
             <h2 className="text-3xl text-orange-500">A Car section</h2>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Cum reprehenderit cumque maxime itaque dolorum totam {cards.length}  </p>
         </div>

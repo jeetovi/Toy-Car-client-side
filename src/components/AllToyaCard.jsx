@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
  const AllToyaCard = ({ toy }) => {
   const {
     id,
@@ -71,7 +73,7 @@ d */}
           </span>
           {/* product  */}
           <div className="mt-5 flex py-3  ml-2 pr-2 gap-2"> 
-          <button className=" hover:bg-red-400/80 px-6 py-2 rounded-md to-white font-medium tracking-wider transition  bg-yellow-500/80">Add to chart</button>
+          <Link to='/chackout'><button className=" hover:bg-red-400/80 px-6 py-2 rounded-md to-white font-medium tracking-wider transition  bg-yellow-500/80">Add to chart</button> </Link>
           <button className="flex-grow justify-center items-center bg-red-300/60 hover:bg-gray-50 transition rounded-md">
            <img  className="opacity-50 w-6 ml-4 items-center" src={love} alt="" />
           </button>

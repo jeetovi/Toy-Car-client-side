@@ -1,4 +1,5 @@
  
+import { Link } from 'react-router-dom';
 import avg1 from '../../../src/assets/all-images/slider-img/slider-1.jpg'
 import avg2 from '../../../src/assets/all-images/slider-img/slider-2.jpg'
  import avg3 from '../../../src/assets/all-images/slider-img/slider-3.jpg'
@@ -51,8 +52,13 @@ const Banner = () => {
             <h1 className='text-5xl font-bold  '> This is a Best Car MArkatplace </h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime minima tenetur incidunt porro vero accusamus ipsa pariatur   Tempore!</p>
              <div>
-                <button className='btn btn-primary mr-5 mt-3'>New Modle</button>
-                <button className='btn btn-outline btn-secondary'>Latest Modle</button>
+              <Link to='/alltoy' >
+              <button className='btn btn-primary mr-5 mt-3'>New Modle</button>
+              </Link>
+              <Link to='/alltoy' >
+              <button className='btn btn-outline btn-secondary'>Latest Modle</button>
+              </Link>
+              
              </div>
         </div>
      
