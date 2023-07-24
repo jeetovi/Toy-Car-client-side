@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
- 
 
 const Header = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -39,29 +38,31 @@ const Header = () => {
                 Home
               </Link>
 
-             
-          <Link className="btn btn-ghost normal-case text-x2" to="/alltoy">
-             AllToys
-           </Link>
-           { user && <Link className="btn btn-ghost normal-case text-x2" to="/atoy">
-             A Toy
-           </Link>}
-           { user && <Link className="btn btn-ghost normal-case text-x2" to="/mytoy">
-              Toy Info
-           </Link>}
-           <Link
-                className="btn btn-ghost normal-case text-x2"
-                to="/blog"
-              >
+              <Link className="btn btn-ghost normal-case text-x2" to="/alltoy">
+                AllToys
+              </Link>
+              {user && (
+                <Link className="btn btn-ghost normal-case text-x2" to="/atoy">
+                  A Toy
+                </Link>
+              )}
+              {user && (
+                <Link className="btn btn-ghost normal-case text-x2" to="/mytoy">
+                  Toy Info
+                </Link>
+              )}
+              <Link className="btn btn-ghost normal-case text-x2" to="/blog">
                 Blog
               </Link>
-              { user &&
-              <Link
-                className="btn btn-ghost normal-case text-x2"
-                to="/chackout">
-                ChackOut
-              </Link>}
-           <Link className="btn btn-ghost normal-case text-x2" to="/login">
+              {user && (
+                <Link
+                  className="btn btn-ghost normal-case text-x2"
+                  to="/chackout"
+                >
+                  ChackOut
+                </Link>
+              )}
+              <Link className="btn btn-ghost normal-case text-x2" to="/login">
                 Login
               </Link>
 
@@ -71,64 +72,56 @@ const Header = () => {
               >
                 Regester
               </Link>
-            
             </ul>
           </div>
-           <Link className="btn btn-ghost normal-case text-xl" to='/'> TOY-CAR </Link>  
+          <Link className="btn btn-ghost normal-case text-xl" to="/">
+            {" "}
+            TOY-CAR{" "}
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <Link className="btn btn-ghost normal-case text-x2" to="/">
             Home
           </Link>
- 
+
           <Link className="btn btn-ghost normal-case text-x2" to="/alltoy">
-             AllToys
-           </Link>
-          { user && <Link className="btn btn-ghost normal-case text-x2" to="/atoy">
-             A Toy
-           </Link>}
-           { user && <Link className="btn btn-ghost normal-case text-x2" to="/mytoy">
+            AllToys
+          </Link>
+          {user && (
+            <Link className="btn btn-ghost normal-case text-x2" to="/atoy">
+              A Toy
+            </Link>
+          )}
+          {user && (
+            <Link className="btn btn-ghost normal-case text-x2" to="/mytoy">
               Toy Info
-           </Link>}
-           <Link
-                className="btn btn-ghost normal-case text-x2"
-                to="/blog"
-              >
-                Blog
-              </Link>
-              { user &&
-              <Link
-                className="btn btn-ghost normal-case text-x2"
-                to="/chackout">
-                ChackOut
-              </Link>}
-           <Link className="btn btn-ghost normal-case text-x2" to="/login">
-                Login
-              </Link>
+            </Link>
+          )}
+          <Link className="btn btn-ghost normal-case text-x2" to="/blog">
+            Blog
+          </Link>
+          {user && (
+            <Link className="btn btn-ghost normal-case text-x2" to="/chackout">
+              ChackOut
+            </Link>
+          )}
+          <Link className="btn btn-ghost normal-case text-x2" to="/login">
+            Login
+          </Link>
 
-              <Link
-                className="btn btn-ghost normal-case text-x2"
-                to="/regestation"
-              >
-                Regester
-              </Link>
-
-            
-
-          
-          
+          <Link className="btn btn-ghost normal-case text-x2" to="/regestation">
+            Regester
+          </Link>
         </div>
 
         {user ? (
           <>
-           
             <span>{user.email}</span>
             <button onClick={handleLogOut} className="btn btn-xs">
               Sign Out{" "}
             </button>
           </>
         ) : (
-
           <Link to="/login">SignIn</Link>
         )}
       </div>

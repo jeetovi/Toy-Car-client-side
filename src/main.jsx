@@ -2,6 +2,7 @@ import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import {
   createBrowserRouter,
+  Route,
   RouterProvider,
 } from "react-router-dom";
 import "./index.css";
@@ -62,7 +63,8 @@ element:<Blog></Blog>
   path:'chackout',
   element: <ChackOut></ChackOut>,
  
-}
+},
+ 
 
     ]
   },
